@@ -51,7 +51,7 @@ function yodaAnswerSuccess(data){
 	$('.fa-plus-square').on('click', function(){
 		var quote = $('.firstContent').text();
 		scope.getQuotes();
-		var publicID = scope.quotesAmount;
+		var publicID = scope.quotesAmount+1;
 		scope.postQuote({"idPublic":publicID , "text": quote, "likes": 1});
 	})
 }
@@ -158,7 +158,6 @@ function setLikeForQuote(quoteID, pubId){
 	}
 	quote.likes +=1;
 	editQuote(quote);
-	refreshTable();
 };
 
 function postQuote(quote){
@@ -192,6 +191,7 @@ function editQuote(quote){
       },
       success: function(data){
    			console.log("success put quote");
+   			refreshTable();
 		},
 		error: function(err){
 			console.log("error put quote");
