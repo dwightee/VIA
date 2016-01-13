@@ -3,6 +3,10 @@ body {
   background-image: url("yoda.jpg");
   background-size: cover;
 }
+body .masthead-nav .fa-plus {
+  color: red;
+  font-size: 20px;
+}
 body #progressMessage {
   position: absolute;
   top: 45%;

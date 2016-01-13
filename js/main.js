@@ -16,7 +16,7 @@ function bindRunThis(){
 function getYodaOutput(textVal){
 	var scope = this;
 	var httpAddress = "https://yoda.p.mashape.com/yoda"
-	textVal = "I want to learn how to speak like yoda";
+	//textVal = "I want to learn how to speak like yoda";
 	var getAddress = httpAddress + "sentence=" + textVal;
 	var answer ="";
 	$.ajax({
@@ -52,7 +52,6 @@ function yodaAnswerSuccess(data){
 		var quote = $('.firstContent').text();
 		scope.getQuotes();
 		var publicID = scope.quotesAmount;
-		console.log(publicID);
 		scope.postQuote({"idPublic":publicID , "text": quote, "likes": 1});
 	})
 }
@@ -70,8 +69,9 @@ function textToSpeech(textVal){
 }
 
 function showProgressCursor(){
-   $("#progressMessageLbl").html("Loading....");
-   $("#progressMessage").show();
+	$('.firstContent').text("");
+   	$("#progressMessageLbl").html("Loading....");
+   	$("#progressMessage").show();
 }
 
 function hideProgressCursor(){
@@ -93,6 +93,8 @@ function pagesSwitch(){
 			$('#apiDocumentation').css('display', 'block');
 		}else if(tab == 'Database'){
 			$('#database').css('display', 'block');
+			$('.masthead-nav').find('.fa-plus').css('display','none');
+			refreshTable();
 		}
 	});
 }
@@ -166,6 +168,7 @@ function postQuote(quote){
       },
       success: function(data){
    			console.log("success post quote");
+   			$('.masthead-nav').find('.fa-plus').css('display','block');
 		},
 		error: function(err){
 			console.log("error post quote");
