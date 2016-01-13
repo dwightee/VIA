@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="Matej Dolezal" content="">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/not.the.skin.css">
+    <link rel="stylesheet" href="circle.skin/circle.player.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.transform2d.js"></script>
+    <script type="text/javascript" src="js/jquery.grab.js"></script>
+    <script type="text/javascript" src="js/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
+    <script type="text/javascript" src="js/circle.player.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+      <div id='doOrDoNot'>
+        <div id="jquery_jplayer_Yoda" class="cp-jplayer"></div>
+      </div>
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Star Wars</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Database</a></li>
+                  <li><a href="#">Api Documentation</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover core">
+            <div id="content" name="tabContent">
+              <h1> STAR WARS FAN API MASHUP</h1>
+              <div id="dataCollect">
+                <input type="text" placeholder="what words are troubling you?" autofocus></input>
+                <button>
+                  <span> RUN THIS !</span>
+                </button>
+              </div>
+              <div id="first">
+              <div id="progressMessage" style="display:none; padding:5px;">
+                <div id="activityIndicator">&nbsp;</div>
+                <label style="font:bold; display:block; padding:5px; text-align: centre;"
+                   id="progressMessageLbl">Loading...</label>
+              </div>
+                <span class="disp">Yoda says:<br></span>
+                <span class="firstContent"></span>
+                <span class="insertQuoete"> Insert the quote in public database <i class="fa fa-plus-square"></i></span>
+              </div>
+              <div id="second" style="display: none">
+                <div id="jquery_jplayer_1" class="cp-jplayer"></div>
+                <div class="prototype-wrapper"> 
+                  <div id="cp_container_1" class="cp-container">
+                    <div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+                      <div class="cp-buffer-1"></div>
+                      <div class="cp-buffer-2"></div>
+                    </div>
+                    <div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+                      <div class="cp-progress-1"></div>
+                      <div class="cp-progress-2"></div>
+                    </div>
+                    <div class="cp-circle-control"></div>
+                    <ul class="cp-controls">
+                      <li><a class="cp-play" tabindex="1">play</a></li>
+                      <li><a class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
+                    </ul>
+                  </div>
+
+                  <div id="cp_container_Yoda" class="cp-container">
+                    <div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+                      <div class="cp-buffer-1"></div>
+                      <div class="cp-buffer-2"></div>
+                    </div>
+                    <div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+                      <div class="cp-progress-1"></div>
+                      <div class="cp-progress-2"></div>
+                    </div>
+                    <div class="cp-circle-control"></div>
+                    <ul class="cp-controls">
+                      <li><a class="cp-play" tabindex="1">play</a></li>
+                      <li><a class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="apiDocumentation" name="tabContent">
+              <h1>Api Documentation</h1>
+              <span>You can read through api documentation
+                <a href="https://apispark.restlet.com/api/apis/15780/versions/1/swagger-ui/index.html?url=/api/apis/15780/versions/1/swagger2?revision=deployed">here</a>
+              </span>
+              <h1>Used technologies</h1>
+              <div id="usedTech"></div>
+            </div>
+
+            <div id="database" name="tabContent">
+              <h1>Famous Quotes</h1>
+              <div id="tableWrap">
+                <i class="fa fa-refresh"></i>
+                <table>
+                  <thead>
+                  <tr>
+                    <th class="small">#ID</th>
+                    <th class="small">#LIKES</th>
+                    <th class="small">VOTE</th>
+                    <th class="big">QUOTES</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          
+          </div>
+
+        
+
+      </div>
+
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
+  <footer>
+    <script type="text/javascript">
+      this.bindRunThis();
+      this.bindDoOrDoNot();
+      this.pagesSwitch();
+      this.initDatabaseQuotesDisplay();
+    </script>
+  </footer>
+</html>

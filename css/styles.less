@@ -1,0 +1,192 @@
+@import "cover.css";
+
+@yodaGreen: #7AC552;
+
+body{
+	 
+	 #progressMessage{
+ 	    position:absolute;
+	    top:45%;
+	    left:25%;
+	    width:50%;
+	    z-index:3000;
+	 }
+
+	 #activityIndicator{
+	   height: 32px;
+	   width: 32px;
+	   -webkit-background-size: 32px 32px;
+	   -o-background-size: 32px 32px;
+	   -moz-background-size: 32px 32px;
+	   background-size: 32px 32px;
+	   margin: 0px auto;
+	   background-image: url("activity_indicator.gif");
+	   background-color: transparent; 
+	}
+	 .cover-container{
+		height: 80%;
+		margin-top: 100px;
+	}
+	.core{
+		height: 100%;
+	}
+	#doOrDoNot{
+		position: fixed;
+		width: 360px;
+		height: 290px;
+		top: 100px;
+		&:hover{
+			cursor: pointer;
+		};
+	}
+
+
+	#cp_container_Yoda{
+		display: none;
+	}
+	#apiDocumentation{
+		display: none;
+		span{
+			margin-top: 20px;
+			color: black;
+			font-size: 30px;
+			a{
+				text-decoration: none;
+				&:hover{
+					color: red;
+				};
+			}
+		}
+		#usedTech{
+		    width: 500px;
+		    height: 260px;
+		    margin: 0 auto;
+		    margin-top: 40px;
+			background-image: url("combination.png");
+		}
+	}
+	#database{
+		.fa-thumbs-o-up{
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		.fa-refresh{
+			font-size: 20px;
+			color: black;
+			float: right;
+			margin: 5px;
+			&:hover{
+				cursor: pointer;
+			};
+		}
+		display: none;
+		height: 100%;
+		#tableWrap{
+			width:100%;
+			height:100%;
+			table{
+				border: solid @yodaGreen;
+				color: black;
+				th{
+					border: solid @yodaGreen;
+					text-align: center;
+				}
+				width: 100%;
+				.small{
+					width: 10%;
+				}
+				.big{
+					width: 70%;
+				}
+			}
+		}
+	}
+ 	#cp_container_1{
+      border: 2px solid @yodaGreen;
+      width: 200px;
+      height: 200px;
+    }
+	background-image: url("yoda.jpg");
+	background-size: cover;
+	#content{
+		position: relative;
+		margin: 0 auto;
+		height: 100%;
+		width: 660px;
+		text-align: center;
+		#dataCollect{
+			input{
+					font-size: 24px;
+					line-height: 24px;
+					width: 400px;
+					border: solid @yodaGreen;
+					color: @yodaGreen;
+					text-align: center;
+					&:focus{
+						outline: none;
+						text-decoration: none;
+						outline-offset: 0;
+					};
+				}
+				button{
+				    height: 38px;
+				    width: 150px;
+				    border-radius: 4px;
+				    box-shadow: none;
+				    border: none;
+				    background: @yodaGreen;
+					span{
+						font-size: 24px;
+						font-weight: bold;
+					}
+					&:focus{
+						outline: none;
+					}
+					&:hover{
+						cursor: pointer;
+					}
+					&:active{
+						border-bottom: solid darkgreen;
+					    padding-top: 2px;
+					}
+				}
+		}
+		#first{
+			.insertQuoete{
+				display: none;
+				font-size: 18px;
+				border-top: solid;
+				.fa-plus-square{
+					color: @yodaGreen;
+					font-size: 27px;
+					&:hover{
+						cursor: pointer;
+						color: black;
+					};
+				}
+			}
+			.disp{
+				display: none;
+			}
+			position: relative;
+		    margin: 0 auto;
+			margin-top: 50px;
+			font-size: 30px;
+			color: @yodaGreen;
+		    width: 80%;
+		    &.error{
+		    	color: red;
+		    }
+		}
+		#second{
+			margin-top: 20px;
+			audio{
+				display: none;
+    			position: relative;
+    			margin: 0 auto;
+    			margin-top: 40px;
+			}
+		}
+	}
+}

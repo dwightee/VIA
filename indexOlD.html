@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<link rel="stylesheet" href="css/not.the.skin.css">
+		<link rel="stylesheet" href="circle.skin/circle.player.css">
+		<script type="text/javascript" src="js/jquery.transform2d.js"></script>
+		<script type="text/javascript" src="js/jquery.grab.js"></script>
+		<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+		<script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
+		<script type="text/javascript" src="js/circle.player.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<h1> STAR WARS FAN API MASHUP</h1>
+			<div id="dataCollect">
+				<input type="text" placeholder="what words are troubling you?" autofocus></input>
+				<button>
+					<span> RUN THIS !</span>
+				</button>
+			</div>
+			<div id="first">
+				<span>Yoda says:<br></span>
+				<span class="firstContent"></span>
+			</div>
+			<div id="second" style="display: none">
+				<div id="jquery_jplayer_1" class="cp-jplayer"></div>
+				<div class="prototype-wrapper"> 
+					<div id="cp_container_1" class="cp-container">
+						<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+							<div class="cp-buffer-1"></div>
+							<div class="cp-buffer-2"></div>
+						</div>
+						<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+							<div class="cp-progress-1"></div>
+							<div class="cp-progress-2"></div>
+						</div>
+						<div class="cp-circle-control"></div>
+						<ul class="cp-controls">
+							<li><a class="cp-play" tabindex="1">play</a></li>
+							<li><a class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+						</ul>
+					</div>
+				</div>
+			<div id="third"></div>
+		</div>
+	</body>
+	<footer>
+		<script type="text/javascript">
+			bindRunThis();
+		</script>
+	</footer>
+</html>

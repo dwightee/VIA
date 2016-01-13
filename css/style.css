@@ -1,0 +1,181 @@
+@import "cover.css";
+body {
+  background-image: url("yoda.jpg");
+  background-size: cover;
+}
+body #progressMessage {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 50%;
+  z-index: 3000;
+}
+body #activityIndicator {
+  height: 32px;
+  width: 32px;
+  -webkit-background-size: 32px 32px;
+  -o-background-size: 32px 32px;
+  -moz-background-size: 32px 32px;
+  background-size: 32px 32px;
+  margin: 0px auto;
+  background-image: url("activity_indicator.gif");
+  background-color: transparent;
+}
+body .cover-container {
+  height: 80%;
+  margin-top: 100px;
+}
+body .core {
+  height: 100%;
+}
+body #doOrDoNot {
+  position: fixed;
+  width: 360px;
+  height: 290px;
+  top: 100px;
+}
+body #doOrDoNot:hover {
+  cursor: pointer;
+}
+body #cp_container_Yoda {
+  display: none;
+}
+body #apiDocumentation {
+  display: none;
+}
+body #apiDocumentation span {
+  margin-top: 20px;
+  color: black;
+  font-size: 30px;
+}
+body #apiDocumentation span a {
+  text-decoration: none;
+}
+body #apiDocumentation span a:hover {
+  color: red;
+}
+body #apiDocumentation #usedTech {
+  width: 500px;
+  height: 260px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-image: url("combination.png");
+}
+body #database {
+  display: none;
+  height: 100%;
+}
+body #database .fa-thumbs-o-up:hover {
+  cursor: pointer;
+}
+body #database .fa-refresh {
+  font-size: 20px;
+  color: black;
+  float: right;
+  margin: 5px;
+}
+body #database .fa-refresh:hover {
+  cursor: pointer;
+}
+body #database #tableWrap {
+  width: 100%;
+  height: 100%;
+}
+body #database #tableWrap table {
+  border: solid #7AC552;
+  color: black;
+  width: 100%;
+}
+body #database #tableWrap table th {
+  border: solid #7AC552;
+  text-align: center;
+}
+body #database #tableWrap table .small {
+  width: 10%;
+}
+body #database #tableWrap table .big {
+  width: 70%;
+}
+body #cp_container_1 {
+  border: 2px solid #7AC552;
+  width: 200px;
+  height: 200px;
+}
+body #content {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  width: 660px;
+  text-align: center;
+}
+body #content #dataCollect input {
+  font-size: 24px;
+  line-height: 24px;
+  width: 400px;
+  border: solid #7AC552;
+  color: #7AC552;
+  text-align: center;
+}
+body #content #dataCollect input:focus {
+  outline: none;
+  text-decoration: none;
+  outline-offset: 0;
+}
+body #content #dataCollect button {
+  height: 38px;
+  width: 150px;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+  background: #7AC552;
+}
+body #content #dataCollect button span {
+  font-size: 24px;
+  font-weight: bold;
+}
+body #content #dataCollect button:focus {
+  outline: none;
+}
+body #content #dataCollect button:hover {
+  cursor: pointer;
+}
+body #content #dataCollect button:active {
+  border-bottom: solid darkgreen;
+  padding-top: 2px;
+}
+body #content #first {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 30px;
+  color: #7AC552;
+  width: 80%;
+}
+body #content #first .insertQuoete {
+  display: none;
+  font-size: 18px;
+  border-top: solid;
+}
+body #content #first .insertQuoete .fa-plus-square {
+  color: #7AC552;
+  font-size: 27px;
+}
+body #content #first .insertQuoete .fa-plus-square:hover {
+  cursor: pointer;
+  color: black;
+}
+body #content #first .disp {
+  display: none;
+}
+body #content #first.error {
+  color: red;
+}
+body #content #second {
+  margin-top: 20px;
+}
+body #content #second audio {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+}
